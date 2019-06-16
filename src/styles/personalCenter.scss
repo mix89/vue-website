@@ -1,0 +1,204 @@
+@import "./common.scss";
+// 表单基础样式
+.custom-item {
+    border: 1px solid #CFCFCF;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 310px;
+  
+    .el-form-item__label {
+      // float:none;
+      // display: inline-block;
+      font-size: 12px;
+      font-weight: normal;
+      padding: 0px 15px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      line-height: 14px;
+      border-right: 1px solid #CFCFCF;
+      margin-top: 9px;
+    }
+  
+    .el-date-editor .el-range__icon {
+      position: absolute;
+      right: 0px;
+    }
+  
+    .el-date-editor .el-range__close-icon {
+      float: none;
+      position: absolute;
+      right: 18px;
+    }
+  
+    .el-form-item__content {
+      // display: inline-block;
+      line-height: 30px;
+    }
+  
+    .el-range-editor.is-active,
+    .el-range-editor.is-active:hover {
+      border-color: #fff;
+    }
+  
+    .el-input__inner {
+      // border: 1px solid #fff;
+      border: none;
+  
+    }
+  
+    .el-input__inner:hover {
+      border-color: #fff;
+    }
+  
+    .el-form-item {
+      margin-bottom: 0;
+    }
+  
+    .el-range-editor.el-input__inner {
+      padding: 0;
+    }
+  
+    .el-date-editor .el-range-input {
+      width: 39%;
+    }
+  
+    .el-date-editor .el-range-separator {
+      line-height: 32px;
+    }
+  
+    .el-date-editor--daterange.el-input,
+    .el-date-editor--daterange.el-input__inner,
+    .el-date-editor--timerange.el-input,
+    .el-date-editor--timerange.el-input__inner {
+      width: 218px;
+      padding-left: 10px;
+      // border: 1px solid red;
+    }
+  
+    //自定义输入框样式
+    .el-input {
+      width: auto;
+    }
+  
+    .el-input__inner {
+      height: 30px;
+      line-height: 30px;
+    }
+  
+  }
+.layout_personal_container{
+    @extend .fix;
+    .page_title_main{
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        height: 48px;
+        line-height: 48px;
+        border-bottom:1px solid #EEEFEF; 
+
+    }
+    .personal_menu{
+        width: 180px;
+        background: #fff;
+        padding-top: 15px;
+        min-height: 600px;
+        a{
+            display: block;
+            color: #868687;
+            padding-left: 60px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 14px;
+            border-left:3px solid #fff;
+            &.is_active{
+                color: #01ACF3;
+                background: #FAFDFF;
+                border-left:3px solid #00ACF3;
+            }
+        }
+    }
+  
+    .layout_personal_sidebar{
+        width: 180px;
+        float: left;
+    }
+    .layout_personal_content{
+        width: 1090px;
+        float: right;
+    }
+    .page_body_main{
+        margin-top: 15px;
+        padding: 18px 15px 0 15px;
+        border-top: 1px solid #00ACF3;
+        background: #fff;
+        min-height: 600px;
+    }
+    
+}
+
+
+.search_item{
+    display:inline-block;
+    width: 300px;
+    float: right;
+}
+.pull-right{
+    float: right;
+
+}
+.search_btn_box{
+    float: right;
+    display: inline-block;
+}
+
+.has_border span{
+  border-left: 1px solid red;
+  border-right: 1px solid  red;
+}
+button{
+    border:none;
+}
+.add_btn{
+ background-color: #00acf3;
+ color: white;
+
+}
+//自定义下拉框
+//自定义复合下拉与搜索框
+.searchbox-item {
+    @extend .custom-item;
+  
+    
+  
+    .el-input__inner {
+      height: 16px;
+      line-height: 16px;
+      font-size: 12px;
+    }
+  
+    .el-select {
+      border: 0;
+    }
+  
+    .el-input-group__append,
+    .el-input-group__prepend {
+      border: 0;
+      font-size: 12px;
+    }
+  
+    // .el-select .el-input {
+    //   width: 100px;
+    // }
+  
+    .input-with-select .el-input-group__prepend {
+      background: #fff;
+      // padding: 10px 10px;
+      border-right: 1px solid #CFCFCF;
+    }
+  
+    // .el-input__prefix,
+    // .el-input__suffix {
+    //   top: 8px;
+    // }
+  }

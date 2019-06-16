@@ -1,0 +1,313 @@
+@import './common.scss';
+// 仓单审核
+.system_list_show{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 45px;
+    .info_txt{
+      margin-left: 20px;
+    }
+    .waiting_txt{
+      margin-left: 20px;
+    }
+    .reject_txt{
+      margin-left: 20px;
+    }
+  }
+  
+  .order_number_show{
+    background: #fff;
+    // line-height: 40px;
+    // height: 40px;
+    padding: 12px 0 12px 38px;
+    border-radius: 5px;
+    font-size: 14px;
+    .info_txt{
+      // width: 136px;
+      float:right;
+      margin-right: 20px;
+      text-align: center;
+      padding-left: 20px;
+      border-left:1px solid #EEEFEF; 
+    }
+    .waiting_txt{
+      float:right;
+      text-align: center;
+      margin-right: 20px;
+      padding-left: 20px;
+      border-left:1px solid #EEEFEF; 
+      // margin-left: 20px;
+    }
+    .reject_txt{
+      // margin-left: 20px;
+      padding-left: 20px;
+      margin-right: 20px;
+      float:right;
+      text-align: center;
+      border-left:1px solid #EEEFEF; 
+    }
+  }
+
+
+  .infoshow_box{
+    margin-top: 10px;
+    border-top:1px solid #00ACF3; 
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    .el-select{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .infoshow_title {
+    @extend .fix;
+    padding-left: 20px;
+    font-size: 14px;
+    // height: 40px;
+    // line-height: 40px;
+    padding: 0 0;
+    background: #fff;
+    .add_new_cargo{
+      margin-top: -15px;
+      float:right;
+      color: #00acf3;
+      font-size: 14px;
+      margin-left: 6px;
+      .el-icon-circle-plus{
+        margin-right: 4px;
+      }
+    }
+   
+  
+    .infoshow_title_inner{
+      position: relative;
+      margin-left: 20px;
+      margin-right:20px; 
+      border-bottom: 1px solid #EEEFEF;
+      padding: 16px 0 16px 20px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 0;
+      width: 3px;
+      height: 14px;
+      background: #00ACF3;
+    }
+    }
+    .info_txt {
+      margin-left: 15px;
+    }
+  }
+  
+  .layout_infoshow {
+    width: 50%;
+    float: left;
+    &.border{
+      border-left: 1px solid #EEEEF0;
+      padding-left: 40px;
+      min-height: 110px;
+    }
+  }
+  
+  .infoshow_cell {
+    @extend .fix;
+    margin-top: 20px;
+    display: table;
+    &.mt30{
+      margin-top: 30px;
+    }
+  
+    .infoshow_cell_title {
+      display: table-cell;
+      color: #777;
+      font-size: 14px;
+      // float: left;
+    }
+    .infoshow_cell_title_inner{
+      width: 124px;
+    }
+  
+    .infoshow_cell_body {
+      display: table-cell;
+      min-width: 345px;
+      font-size: 14px;
+      color: #323232;
+      position: relative;
+      .info_success {
+        margin-left: 20px;
+      }
+    }
+    .el-form-item{
+      margin-left: 0;
+    }
+    &.mt0{
+      margin-top: 0;
+    }
+  }
+  
+    
+  .infoshow_body {
+    @extend .fix;
+    background: #fff;
+    padding: 30px 40px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+   .cargo_box{
+    @extend .fix;
+    border: 1px solid #EEEFEF;
+    margin-top: 15px;
+    margin-left: -66px;
+    margin-right: -67px;
+    padding: 50px 43px 30px;
+
+    position: relative;
+    .cargo_title{
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 10px;
+      padding-right: 15px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background: #00ACF3;
+      font-size: 14px;
+      color: #fff;
+    }
+    .delete_cargo{
+      color: #00ACF3;
+      position: absolute;
+      right: 3px;
+      top: 4px;
+      font-size: 18px;
+      cursor: pointer;
+      .el-icon-close{
+        font-weight: bold;
+      }
+    }
+    // margin: 20px;
+    // padding-bottom: 20px;
+    // border-bottom-left-radius: 0px;
+    // border-bottom-right-radius: 0px;
+    .layout_infoshow.border{
+      min-height: 230px;
+    }
+  }
+  .custom-item{
+    width:420px;
+  }
+  }
+
+
+//流程图
+.showflow{
+    width: 640px;
+    margin: 0 auto;
+    min-height: 300px;
+  }
+  .showflow_box{
+    position: relative;
+    padding-left: 40px;
+    // border-left: 1px solid #00ACF3;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    display: flex;
+    &:before{
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: 17px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50% 50%;
+      background: #00ACF3;
+      box-shadow: 0 0 5px #00ACF3;
+    }
+    &:after{
+      position: absolute;
+      left: 0px;
+      top: 0;
+      content: "";
+      width: 1px;
+      height: 40px;
+      background: #00ACF3;
+    }
+    .showflow_date{
+      width: 160px;
+      color: #777;
+    }
+    .showflow_person{
+      // width: 115px;
+      color: #323232;
+      margin-right: 10px;
+    }
+    .showflow_state{
+      color: #777777;
+    }
+   
+    &.warining{
+      .showflow_date{
+        color: #FF9816; 
+      }
+      .showflow_person{
+        color: #FF9816; 
+      }
+      .showflow_state{
+        color: #FF9816; 
+      }
+      &:before{
+        background: #FF9816;
+        box-shadow: 0 0 5px #FF9816;
+      }
+      &:after{
+        background: #FF9816;
+        box-shadow: 0 0 5px #ffae47;
+      }
+    }
+  
+  }
+  .showflow_box_year{
+    @extend .showflow_box;
+    &:before{
+      top: 17px;
+    }
+    &:after{
+      top: 29px; 
+      height: 20px;
+      background: #00ACF3;
+    }
+    .showflow_year{
+      color: #323232;
+      position: absolute;
+      left: -57px;
+      top: 9px;
+      border-bottom:1px solid #00ACF3; 
+      line-height: 20px;
+      &:before{
+        position: absolute;
+        content: "";
+        top: 2px;
+        right: -68px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50% 50%;
+        background: transparent;
+        border: 2px solid #00ACF3;
+        box-shadow: 0 0 5px #35c6fb;
+      }
+    }
+  }
+
+  //货物信息
+  .infoshow_box--cargo{
+    @extend .infoshow_box;
+    .infoshow_body{
+      padding: 30px 83px;
+    }
+  }
+
+ 

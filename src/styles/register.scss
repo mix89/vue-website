@@ -1,0 +1,34 @@
+@import './common.scss';
+
+.minh800{
+    min-height: 800px;
+}
+.register_feedback{
+    margin: 145px auto 0; 
+    width: 590px;
+    height: 330px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #b8e9ff;
+    padding: 64px 46px 46px;
+    .register_feedback_title{
+        font-size: 18px;
+        color: #323232;
+        margin-bottom: 36px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .register_feedback_body{
+        text-align: center;
+        color: #777;
+        font-size: 14px;
+        p{
+            line-height: 1.2em;
+        }
+    }
+    .submit_buttons{
+        .cancel_btn{
+            margin-top:54px;
+            margin-left: 0;
+        }
+    }
+}
